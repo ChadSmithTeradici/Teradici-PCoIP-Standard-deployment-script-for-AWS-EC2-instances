@@ -65,7 +65,7 @@ In this section, you procure a On-Demand EC2 instance in your region.
 
     **Note**: In this guide we selected M5.2xlarge Instance type.
 
-    ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-deployment_script-for-AWS-NVIDIA-Instances/raw/main/images/AWS-G4dn-Fam.jpg)
+    ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Standard-deployment-script-for-AWS-EC2-instances/blob/main/images/Instance_Fam.jpg)
 
 1. On the **Configure Instance Details** page, at a minimum fill in **Networking/Subnet/Auto-Assign Public-IP** based on desired Network topology. Take remaining configuration details based your requirements, until you reach the **User data** field in the Advanced Details section.
 
