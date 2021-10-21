@@ -122,7 +122,7 @@ In this section, you procure a On-Demand EC2 instance in your region.
     
     Then, choose **Review** and **Launch**.
 
-1. On the **Review page**, review your selections and verify that the **Host ID** matches the Dedicated Host you created earlier. Then, choose **Launch**.
+1. On the **Review page**, review your selections and verify that the **Host ID** matches the EC2 On-Demand instnace you created earlier. Then, choose **Launch**.
 
 1. On the **Select an existing key pair or create a new key pair** dialog, verify your existing key pair (if you do not have a key pair, select the option to create a new key pair). Then, select the acknowlegement check box and choose **Launch Instances**.
 
