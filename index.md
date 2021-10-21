@@ -10,9 +10,9 @@ Chad Smith | Technical Alliance Architect at Teradici | HP
 
 <p style="background-color:#CAFACA;"><i>Contributed by Teradici employees.</i></p>
 
-This guide shows you how to install Teradici PCoIP agent on a standard x86 instance running in AWS. Also this guide is intended for customers that have Teradici annual subcription and are interested in transfering licensed seats to a AWS EC2 instance(s). There is an alternative option for a AWS marketplace hourly subscription with pre-packaged AMI for [Windows 2019](https://aws.amazon.com/marketplace/pp/prodview-wjxt6h5skww4m?sr=0-4&ref_=beagle&applicationId=AWSMPContessa). AWS marketplace offering is NOT apart of this deployment guide. 
+This guide shows you how to install Teradici PCoIP agent on a standard x86 instances running in AWS and is intended for customers that have Teradici annual subcription and are interested in transfering licensed seats to a AWS EC2 instance(s). There is an alternative option for a AWS marketplace hourly subscription with pre-packaged AMI for [Windows 2019](https://aws.amazon.com/marketplace/pp/prodview-wjxt6h5skww4m?sr=0-4&ref_=beagle&applicationId=AWSMPContessa). AWS marketplace offering is NOT apart of this deployment guide. 
 
-PCoIP standard, also referred to as CAS standard can run on any x86(intel, AMD) based PCU that supports AVX2 instructions. That's almost all instance families  in AWS, except [AWS Gravition CPUs](https://aws.amazon.com/pm/ec2-graviton/).  Included are instances with dedicated GPUs from Nvidia and AMD as well, which will run PCoIP stardard but will take advantage of GPU offloading. For GPU acceleration PCoIP Ultra (CAS+) must be used instead. A [PCoIP Ultra scripted deployment guide](https://chadsmithteradici.github.io/Teradici-PCoIP-Ultra-deployment-script-for-AWS-NVIDIA-EC2-instances/) is also available for Nvidia powered GPUs for high performance workloads.
+PCoIP standard, also referred to as CAS standard can run on any x86(intel,AMD) based PCU that supports AVX2 instructions. That's almost all instance families in AWS, except [AWS Gravition CPUs] (https://aws.amazon.com/pm/ec2-graviton/).  Included are instances with dedicated GPUs from Nvidia and AMD as well, which will run PCoIP stardard but will NOT take advantage of GPU offloading. For GPU acceleration PCoIP Ultra (CAS+) is required. A [PCoIP Ultra scripted deployment guide](https://chadsmithteradici.github.io/Teradici-PCoIP-Ultra-deployment-script-for-AWS-NVIDIA-EC2-instances/) is also available instead.
 
 EC2 instances are available for purchase through On Demand and Savings Plans pricing models. Billing for EC2 instances is per second with a 1hr-hour minimum allocation period to comply with the Mircosft Software License Agreement for windows. You can launch an EC2 instanes and be up and running within minutes. At the end of the 1-hour minimum allocation period, the host can be released at any time without further commitment. 
 
@@ -55,13 +55,15 @@ In this section, you create and configure a virtual workstation, including setti
 
 In this section, you procure a G4dn/G5dn type dedicated host in your region
 
-1. Select a AWS region that has [EC2 G4dn Instances available](https://www.instance-pricing.com/provider=aws-ec2/instance=g4dn.4xlarge/) with a understanding of minute/hourly consumption rate. 
+1. Select a AWS region that has [EC2 Instance type Instances available](https://aws.amazon.com/ec2/pricing/on-demand/) with a understanding of minute/hourly consumption rate. 
 
-1.  Launch a G4dn instance, On the [EC2 Dashboard](https://console.aws.amazon.com/ec2), choose **Launch Instance**.
+1.  Launch a EC2 instance, On the [EC2 Dashboard](https://console.aws.amazon.com/ec2), choose **Launch Instance**.
 
 1. On the **Choose AMI** page, select the [Windows 2019 Base](https://aws.amazon.com/marketplace/pp/prodview-bd6o47htpbnoe?ref=cns_srchrow) or [Cent0S7](https://aws.amazon.com/marketplace/pp/prodview-qkzypm3vjr45g?ref=cns_srchrow) AMI(s) based on desired OS then press **Select** button.
 
-1. On the **Choose Instance Type** page, keep the default selection of **G4dn Instance familiy types** and choose **Next: Configure Instance Details**.
+1. On the **Choose Instance Type** page, pick a instance family based on performance requirements** and choose **Next: Configure Instance Details**.
+
+**Note**: In this guide we selected M5 Instance type.
 
     ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-deployment_script-for-AWS-NVIDIA-Instances/raw/main/images/AWS-G4dn-Fam.jpg)
 
