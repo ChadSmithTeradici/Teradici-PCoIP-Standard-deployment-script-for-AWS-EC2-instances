@@ -14,7 +14,7 @@ This guide shows you how to install Teradici PCoIP agent on a standard x86 insta
 
 PCoIP standard, also referred to as CAS standard can run on any x86(intel,AMD) based CPUs that supports AVX2 instructions. That's almost all instance families, EXCEPT [AWS Gravition CPUs](https://aws.amazon.com/pm/ec2-graviton/).  Included are instances with dedicated GPUs from Nvidia and AMD as well, which run PCoIP stardard but will NOT take advantage of GPU offloading. For GPU acceleration PCoIP Ultra (CAS+) is required. A [PCoIP Ultra scripted deployment guide](https://chadsmithteradici.github.io/Teradici-PCoIP-Ultra-deployment-script-for-AWS-NVIDIA-EC2-instances/) is also available instead.
 
-EC2 instances are available for purchase through On Demand and Savings Plans pricing models. Billing for EC2 instances is per second with a 1hr-hour minimum allocation period to comply with the Mircosft Software License Agreement for windows. You can launch an EC2 instanes and be up and running within minutes. At the end of the 1-hour minimum allocation period, the host can be released at any time without further commitment. 
+EC2 instances are available for purchase through On Demand and Savings Plans pricing models. Billing for EC2 instances is per second with a 1hr-hour minimum allocation period to comply with the Mircosft Software License Agreement for windows. You can launch an EC2 instances and be up and running within minutes. At the end of the 1-hour minimum allocation period, the host can be released at any time without further commitment. 
 
 More Information on EC2 instance can be found [here](https://aws.amazon.com/ec2/pricing/on-demand/).
 
@@ -30,7 +30,7 @@ More Information on EC2 instance can be found [here](https://aws.amazon.com/ec2/
 This tutorial uses billable components of AWS Cloud and assumes Teradici subscription, including the following:
 
 +   [Teradici PCoIP](https://connect.teradici.com/contact-us), Teradici PCoIP subscriptions
-+   [AWS Nvidia EC2 Instance](https://aws.amazon.com/nvidia/), including vCPUs, memory, disk, and GPUs
++   [AWS EC2 Instance types](https://aws.amazon.com/ec2/instance-types/), including vCPUs, memory, disk, and GPUs
 +   [Internet egress and transfer costs](https://aws.amazon.com/blogs/architecture/overview-of-data-transfer-costs-for-common-architectures/), for PCoIP and other applications communications
 
 Use the [AWS pricing calculator](https://calculator.aws/#/) to generate a cost estimate based on your projected usage.
