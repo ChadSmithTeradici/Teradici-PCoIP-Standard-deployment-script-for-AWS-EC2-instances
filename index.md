@@ -53,7 +53,7 @@ In this section, you create and configure a virtual workstation, including setti
 
 ### Procure the EC2 Nvidia Instance
 
-In this section, you procure a G4dn/G5dn type dedicated host in your region
+In this section, you procure a On-Demand EC2 instance in your region.
 
 1. Select a AWS region that has [EC2 Instance type Instances available](https://aws.amazon.com/ec2/pricing/on-demand/) with a understanding of minute/hourly consumption rate. 
 
@@ -63,7 +63,7 @@ In this section, you procure a G4dn/G5dn type dedicated host in your region
 
 1. On the **Choose Instance Type** page, pick a instance family based on performance requirements** and choose **Next: Configure Instance Details**.
 
-**Note**: In this guide we selected M5 Instance type.
+    **Note**: In this guide we selected M5.2xlarge Instance type.
 
     ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-deployment_script-for-AWS-NVIDIA-Instances/raw/main/images/AWS-G4dn-Fam.jpg)
 
