@@ -83,7 +83,7 @@ In this section, you procure a On-Demand EC2 instance in your region.
     
     + For **[CentOS 7](https://github.com/teradici/cloud_deployment_scripts/blob/master/provisioning-scripts/aws/centos-gfx-provisioning.sh)**  **Copy** all the contents of this script and **Paste** it into the **User data** field.
     
-      You will need to enter your **Teradici registration code** into the script after it is pasted in the User data field. For CentOS that field is on **line 31**.
+      You will need to enter your **Teradici registration code** into the script after it is pasted in the User data field. For CentOS that field is on **line 13**.
       
         ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-deployment-script-for-AWS-NVIDIA-EC2-instances/raw/main/images/Centos_UserDefine_Reg.jpg)
 
