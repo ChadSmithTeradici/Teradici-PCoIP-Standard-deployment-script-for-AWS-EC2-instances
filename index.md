@@ -10,7 +10,9 @@ Chad Smith | Technical Alliance Architect at Teradici | HP
 
 <p style="background-color:#CAFACA;"><i>Contributed by Teradici employees.</i></p>
 
-This guide shows you how to install Teradici PCoIP agent on a Nvidia powered instance running in AWS. Also this guide is intended for customers that have Teradici annual subcription and are interested in transfering licensed seats to a AWS EC2 instance(s). There is an alternative option for a AWS marketplace hourly subscription with pre-packaged AMI for [Windows 2019](https://aws.amazon.com/marketplace/pp/prodview-boeg6hiewus3o?sr=0-1&ref_=beagle&applicationId=AWSMPContessa) and [CentOS 7](https://aws.amazon.com/marketplace/pp/prodview-yjdn554yaqvem?sr=0-2&ref_=beagle&applicationId=AWSMPContessa). AWS marketplace offering is NOT apart of this deployment guide. 
+This guide shows you how to install Teradici PCoIP agent on a standard x86 instance running in AWS. Also this guide is intended for customers that have Teradici annual subcription and are interested in transfering licensed seats to a AWS EC2 instance(s). There is an alternative option for a AWS marketplace hourly subscription with pre-packaged AMI for [Windows 2019](https://aws.amazon.com/marketplace/pp/prodview-wjxt6h5skww4m?sr=0-4&ref_=beagle&applicationId=AWSMPContessa). AWS marketplace offering is NOT apart of this deployment guide. 
+
+PCoIP standard, also referred to as CAS standard can run on any x86(intel, AMD) based PCU that supports AVX2 instructions. That pretty every instance type available in AWS, except EC2 instanes powered by [AWS Gravition CPUs](https://aws.amazon.com/pm/ec2-graviton/). That even includes instances with dedicated GPUs from Nvidia and AMD, which will run PCoIP stardard but not be able to GPU offload codec for higher performance. For GPU acceleration PCoIP Ultra also referred to as CAS+ must be used instead. That [deployment guide](https://chadsmithteradici.github.io/Teradici-PCoIP-Ultra-deployment-script-for-AWS-NVIDIA-EC2-instances/) is also available for Nvidia powered GPUs.
 
 EC2 instances are available for purchase through On Demand and Savings Plans pricing models. Billing for EC2 instances is per second with a 1hr-hour minimum allocation period to comply with the Mircosft Software License Agreement for windows. You can launch an EC2 instanes and be up and running within minutes. At the end of the 1-hour minimum allocation period, the host can be released at any time without further commitment. 
 
@@ -39,7 +41,7 @@ In this section, you set up some basic resources that the tutorial depends on.
 
 1. Instructions in this guide assume that you have a [AWS account](https://aws.amazon.com/free/) 
 
-1. Ensure you have [Service Quotas](https://console.aws.amazon.com/servicequotas) for **'All G and VT Spot Instance Requests'**.
+1. Ensure you have [Service Quotas](https://console.aws.amazon.com/servicequotas) for **'All Standard (A, C, D, H, I, M, R, T, Z) Spot Instance Requests'**.
 
 1. Familiarize yourself with [AWS network](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Networking.html) topology and best practices.
 
