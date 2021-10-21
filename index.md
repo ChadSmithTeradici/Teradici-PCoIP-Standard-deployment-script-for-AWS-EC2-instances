@@ -63,7 +63,7 @@ In this section, you procure a On-Demand EC2 instance in your region.
 
 1. On the **Choose Instance Type** page, pick a instance family based on performance requirements** and choose **Next: Configure Instance Details**.
 
-    **Note**: In this guide we selected M5.2xlarge Instance type.
+    **Note**: In this guide a M5.2xlarge was selected.
 
     ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Standard-deployment-script-for-AWS-EC2-instances/blob/main/images/Instance_Fam.jpg)
 
@@ -168,6 +168,6 @@ To avoid incurring charges to your AWS account for the resources used in this tu
 
 ## What's next
 
-+   Configure and optimize for PCoIP Host OS type. For [Windows](https://www.teradici.com/web-help/pcoip_agent/graphics_agent/windows/21.07/admin-guide/configuring/configuring/) and [Centos](https://www.teradici.com/web-help/pcoip_agent/graphics_agent/linux/21.07/admin-guide/configuring/configuring/) PCoIP optimizations.
++   Configure and optimize for PCoIP Host OS type. For [Windows](https://www.teradici.com/web-help/pcoip_agent/standard_agent/windows/21.07/admin-guide/configuring/configuring/) and [Centos](https://www.teradici.com/web-help/pcoip_agent/standard_agent/linux/21.07/admin-guide/configuring/configuring/) PCoIP optimizations.
 +   Learn more about [Teradici](https://www.teradici.com/) products and offerings.
-+   Learn more about [Nvidia powered AWS EC2 Instances](https://www.youtube.com/watch?v=9k5wge-hfl4&ab_channel=AmazonWebServices)
++   Learn more about [AWS EC2 Instances families](https://www.youtube.com/watch?v=W0PKclqP3U0&ab_channel=AmazonWebServices)
