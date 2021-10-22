@@ -143,21 +143,21 @@ In this section, you will establish a connection to your instance using PCoIP. Y
 
 1. From the client system, start your PCoIP client per OS. Typically the PCoIP client will have a icon:
 
-    ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Standard-deployment-script-for-AWS-EC2-instances/blob/main/images/PCoIP-icon.jpg)
+    ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Standard-deployment-script-for-AWS-EC2-instances/blob/main/images/PCoIP_icon.jpg)
 
 1. When the PCoIP client starts, it will ask for a **Host Address or Code**. Enter in your **IP address or FQDN** previously identified in previous section. (optionally) enter a name to **Connection Name** field then **SAVE**, if you want to save connection.
 
-    ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Standard-deployment-script-for-AWS-EC2-instances/blob/main/images/PCoIP-Client.jpg)
+    ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Standard-deployment-script-for-AWS-EC2-instances/blob/main/images/PCoIP_Client.jpg)
     
 1. Next, you will get a 'Cannot verify your connection to IP' warning. This error is becuase a 3rd party trusted certificate has not been install on the host. You can select the **Connect Insecurely** option to continue.
     
-    ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Standard-deployment-script-for-AWS-EC2-instances/blob/main/images/PCoIP-Trusted.jpg)
+    ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Standard-deployment-script-for-AWS-EC2-instances/blob/main/images/PCoIP_Trusted.jpg)
     
 1. Finally, enter in the OS login credentials: 
     + For **Windows** it would be **Administrator** and the password can be [retreived](https://aws.amazon.com/premiumsupport/knowledge-center/retrieve-windows-admin-password/) via EC2 console after provisioning is complete
     + For **Centos** Establish an [SSH session](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html) to a create a user via *adduser* command after provisioning in complete
 
-    ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Standard-deployment-script-for-AWS-EC2-instances/blob/main/images/PCoIP-Auth.jpg)
+    ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Standard-deployment-script-for-AWS-EC2-instances/blob/main/images/PCoIP_Auth.jpg)
 
 ## Clean up
 
