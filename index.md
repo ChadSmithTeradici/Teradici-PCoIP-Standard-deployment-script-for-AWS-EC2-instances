@@ -168,6 +168,6 @@ To avoid incurring charges to your AWS account for the resources used in this tu
 
 ## What's next
 
-+   Configure and optimize for PCoIP Host OS type. For [Windows](https://www.teradici.com/web-help/pcoip_agent/standard_agent/windows/21.07/admin-guide/configuring/configuring/) and [Centos](https://www.teradici.com/web-help/pcoip_agent/standard_agent/linux/21.07/admin-guide/configuring/configuring/) PCoIP optimizations.
++   Configure and optimize for PCoIP standard host OS type. For [Windows](https://www.teradici.com/web-help/pcoip_agent/standard_agent/windows/21.07/admin-guide/configuring/configuring/) and [Centos](https://www.teradici.com/web-help/pcoip_agent/standard_agent/linux/21.07/admin-guide/configuring/configuring/) PCoIP optimizations.
 +   Learn more about [Teradici](https://www.teradici.com/) products and offerings.
 +   Learn more about [AWS EC2 Instances families](https://www.youtube.com/watch?v=W0PKclqP3U0&ab_channel=AmazonWebServices)
