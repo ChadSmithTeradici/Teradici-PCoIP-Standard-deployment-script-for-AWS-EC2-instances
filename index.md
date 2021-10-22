@@ -65,11 +65,11 @@ In this section, you procure a On-Demand EC2 instance in your region.
 
     **Note**: In this guide a M5.2xlarge was selected.
 
-    ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Standard-deployment-script-for-AWS-EC2-instances/blob/main/images/Instance_Fam.jpg)
+    ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Standard-deployment-script-for-AWS-EC2-instances/raw/main/images/Instance_Fam.jpg)
 
 1. On the **Configure Instance Details** page, at a minimum fill in **Networking/Subnet/Auto-Assign Public-IP** based on desired Network topology. Take remaining configuration details based your requirements, until you reach the **User data** field in the Advanced Details section.
 
-    ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Standard-deployment-script-for-AWS-EC2-instances/blob/main/images/User_Data_Field.jpg)
+    ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Standard-deployment-script-for-AWS-EC2-instances/raw/main/images/User_Data_Field.jpg)
  
  1. Based on your EC2 Instance desired OS you will need either a Windows Powershell script (or) CentOS Bash script. These scripts are maintained and updated quartly by Teradici and are avaible on the [Teradici GitHub repo](https://github.com/teradici)
  
@@ -77,7 +77,7 @@ In this section, you procure a On-Demand EC2 instance in your region.
     
       You will need to enter your **Teradici registration code** into the script after it is pasted in the User data field. For Windows that field is on **line 11**. 
       
-        ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Standard-deployment-script-for-AWS-EC2-instances/blob/main/images/Windows_UserDefine_Reg.jpg)
+        ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Standard-deployment-script-for-AWS-EC2-instances/raw/main/images/Windows_UserDefine_Reg.jpg)
         
         Registration codes look like this: ABCDEFGH12@AB12-C345-D67E-89FG
     
@@ -85,7 +85,7 @@ In this section, you procure a On-Demand EC2 instance in your region.
     
       You will need to enter your **Teradici registration code** into the script after it is pasted in the User data field. For CentOS that field is on **line 13**.
       
-        ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Standard-deployment-script-for-AWS-EC2-instances/blob/main/images/Centos_UserDefine_Reg.jpg)
+        ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Standard-deployment-script-for-AWS-EC2-instances/raw/main/images/Centos_UserDefine_Reg.jpg)
 
       Registration codes look like this: ABCDEFGH12@AB12-C345-D67E-89FG
  
@@ -143,21 +143,21 @@ In this section, you will establish a connection to your instance using PCoIP. Y
 
 1. From the client system, start your PCoIP client per OS. Typically the PCoIP client will have a icon:
 
-    ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Standard-deployment-script-for-AWS-EC2-instances/blob/main/images/PCoIP_icon.jpg)
+    ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Standard-deployment-script-for-AWS-EC2-instances/raw/main/images/PCoIP_icon.jpg)
 
 1. When the PCoIP client starts, it will ask for a **Host Address or Code**. Enter in your **IP address or FQDN** previously identified in previous section. (optionally) enter a name to **Connection Name** field then **SAVE**, if you want to save connection.
 
-    ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Standard-deployment-script-for-AWS-EC2-instances/blob/main/images/PCoIP_Client.jpg)
+    ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Standard-deployment-script-for-AWS-EC2-instances/raw/main/images/PCoIP_Client.jpg)
     
 1. Next, you will get a 'Cannot verify your connection to IP' warning. This error is becuase a 3rd party trusted certificate has not been install on the host. You can select the **Connect Insecurely** option to continue.
     
-    ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Standard-deployment-script-for-AWS-EC2-instances/blob/main/images/PCoIP_Trusted.jpg)
+    ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Standard-deployment-script-for-AWS-EC2-instances/raw/main/images/PCoIP_Trusted.jpg)
     
 1. Finally, enter in the OS login credentials: 
     + For **Windows** it would be **Administrator** and the password can be [retreived](https://aws.amazon.com/premiumsupport/knowledge-center/retrieve-windows-admin-password/) via EC2 console after provisioning is complete
     + For **Centos** Establish an [SSH session](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AccessingInstancesLinux.html) to a create a user via *adduser* command after provisioning in complete
 
-    ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Standard-deployment-script-for-AWS-EC2-instances/blob/main/images/PCoIP_Auth.jpg)
+    ![image](https://github.com/ChadSmithTeradici/Teradici-PCoIP-Standard-deployment-script-for-AWS-EC2-instances/raw/main/images/PCoIP_Auth.jpg)
 
 ## Clean up
 
